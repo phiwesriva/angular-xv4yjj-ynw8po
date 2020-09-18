@@ -1,5 +1,12 @@
-<!--<div *ngFor="let product of products; index as productId">
-  <div class="container">
+<div *ngFor="let product of products; index as productId">
+  <h3><a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      {{ product.name }}</a>
+  </h3>
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+</div>
+<!--  <div class="container">
               <a [routerLink]="['/housef']">
           <img src = "https://raw.githubusercontent.com/phiwesriva/angular-xv4yjj-syd1sn/master/src/assets/pic1.jpg" height="400" width="100%"></a>
     <div class="top-left">

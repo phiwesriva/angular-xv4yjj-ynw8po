@@ -19,6 +19,7 @@ import { BottomsComponent } from './bottoms/bottoms.component';
 import { CcameosComponent } from './ccameos/ccameos.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { AboutComponent } from './about/about.component';
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'tops', component: TopsComponent },
       { path: 'ppolicy', component: PpolicyComponent },
       { path: 'contact', component: ContactComponent },
@@ -57,6 +59,7 @@ import { AboutComponent } from './about/about.component';
     CcameosComponent,
     HeaderComponent,
     AboutComponent,
+    ProductDetailsComponent,
   ],
   bootstrap: [ AppComponent ]
 })
