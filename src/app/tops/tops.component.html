@@ -1,3 +1,14 @@
+<div *ngFor="let product of products; index as productId">
+  <h3><a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      {{ product.name }}</a>
+  </h3>
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+</div>
+
+<!--
+
 <div class="container">
 <table class="center" style="width:100%" id="t01" >
   <tr>
@@ -76,3 +87,4 @@
 
 </table>
 </div>
+-->

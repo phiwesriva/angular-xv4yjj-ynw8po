@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { dress } from '../dress';
+
 
 @Component({
   selector: 'app-dresses',
@@ -11,5 +13,5 @@ export class DressesComponent implements OnInit {
 
   ngOnInit() {
   }
-
+dress = dress;
 }

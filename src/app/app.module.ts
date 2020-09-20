@@ -20,6 +20,8 @@ import { CcameosComponent } from './ccameos/ccameos.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { DressDetailsComponent } from './dress-details/dress-details.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   imports: [
@@ -29,6 +31,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'dress/:dressId', component: DressDetailsComponent },
       { path: 'tops', component: TopsComponent },
       { path: 'ppolicy', component: PpolicyComponent },
       { path: 'contact', component: ContactComponent },
@@ -60,8 +63,10 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HeaderComponent,
     AboutComponent,
     ProductDetailsComponent,
+    DressDetailsComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [CartService]
 })
 export class AppModule { }
 
