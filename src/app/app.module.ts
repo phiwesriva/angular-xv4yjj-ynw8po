@@ -48,7 +48,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'ccameos', component: CcameosComponent },
       { path: 'dresses', component: DressesComponent },
       { path: 'about', component: AboutComponent },
-      
+      { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
