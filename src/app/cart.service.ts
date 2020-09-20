@@ -12,6 +12,7 @@ items = [];
 
   addToCart(product) {
     this.items.push(product);
+  
   }
 
   getItems() {
