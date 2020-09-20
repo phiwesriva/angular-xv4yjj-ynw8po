@@ -24,6 +24,7 @@ import { DressDetailsComponent } from './dress-details/dress-details.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
@@ -47,6 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'ccameos', component: CcameosComponent },
       { path: 'dresses', component: DressesComponent },
       { path: 'about', component: AboutComponent },
+      
     ])
   ],
   declarations: [
@@ -69,6 +71,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProductDetailsComponent,
     DressDetailsComponent,
     CartComponent,
+    ShippingComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
