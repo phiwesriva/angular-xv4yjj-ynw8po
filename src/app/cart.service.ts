@@ -5,10 +5,17 @@ import { Injectable } from '@angular/core';
 )
 export class CartService {
 items = [];
-addToCart(product) {
+  constructor() { }
+addToCart(product, dress) {
     this.items.push(product);
-  }
+   this.items.push(dress)
+   }
 
+ /*  
+addToCart(dress)
+{
+this.items.push(dress);
+}*/
   getItems() {
     return this.items;
   }
@@ -17,7 +24,7 @@ addToCart(product) {
     this.items = [];
     return this.items;
   }
-
-  constructor() { }
-
+  getShippingPrices() {
+    return this.http.get('/assets/shipping.json');
+  }
 }

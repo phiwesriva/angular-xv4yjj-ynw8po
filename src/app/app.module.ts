@@ -23,10 +23,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { DressDetailsComponent } from './dress-details/dress-details.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
     RouterModule.forRoot([
