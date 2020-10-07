@@ -8,20 +8,28 @@ import { dress } from '../dress';
   templateUrl: './dress-details.component.html',
   styleUrls: ['./dress-details.component.css']
 })
-export class DressDetailsComponent implements OnInit {
-dress;
 
- addToCart(product) {
-    this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart!');
-  }
-  
-  constructor(private route: ActivatedRoute,private cartService: CartService) { }
+export class DressDetailsComponent implements OnInit {
+
+  constructor() { }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-    this.dress = dress[+params.get('dressId')];
-    });
   }
+  
+//export class DressDetailsComponent implements OnInit {
+//dress;
 
-}
+ //addToCart(product) {
+   // this.cartService.addToCart(product);
+    //window.alert('Your product has been added to the cart!');
+ // }
+
+  //constructor(private route: ActivatedRoute,private cartService: CartService) { }
+
+  //ngOnInit() {
+   // this.route.paramMap.subscribe(params => {
+    //this.dress = dress[+params.get('dressId')];
+    //});
+  //}
+//-->
+/}
