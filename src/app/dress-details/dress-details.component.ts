@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CartService } from '../cart.service';
-import { dress } from '../dress';
+//import { ActivatedRoute } from '@angular/router';
+//import { CartService } from '../cart.service';
+//import { dress } from '../dress';
 
 @Component({
   selector: 'app-dress-details',
@@ -32,4 +32,4 @@ export class DressDetailsComponent implements OnInit {
     //});
   //}
 //-->
-/}
+}
