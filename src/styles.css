@@ -201,7 +201,7 @@ align-items: center;
 
 .container {
   position: relative;
-  max-width: 10%; /*Maximum width */ 
+  max-width: 900px; /*Maximum width */ 
   margin: 0 auto; /* Center it */
   /*display: flex;*/
   /*flex-direction: row;*/ 
@@ -237,7 +237,7 @@ align-items: center;
 
 .container {
   position: relative;
-  max-width: 100%; /*Maximum width */ 
+  max-width: 900px; /*Maximum width */ 
   margin: 0 auto; /* Center it */
   /*display: flex;*/
   /*flex-direction: row;*/ 
