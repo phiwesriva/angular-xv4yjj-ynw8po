@@ -25,6 +25,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   imports: [
@@ -72,6 +73,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     DressDetailsComponent,
     CartComponent,
     ShippingComponent,
+    SearchComponent,
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
