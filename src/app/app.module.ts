@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { SearchComponent } from './search/search.component';
 import { ShopService } from './shop.service';
+import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   imports: [
@@ -77,7 +78,7 @@ import { ShopService } from './shop.service';
     SearchComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, ShopService]
+  providers: [CartService, ShopService, InMemoryDataService]
 })
 export class AppModule { }
 
