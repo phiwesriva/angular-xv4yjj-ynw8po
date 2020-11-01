@@ -25,9 +25,6 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
-import { SearchComponent } from './search/search.component';
-import { ShopService } from './shop.service';
-import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   imports: [
@@ -75,10 +72,9 @@ import { InMemoryDataService } from './in-memory-data.service';
     DressDetailsComponent,
     CartComponent,
     ShippingComponent,
-    SearchComponent,
   ],
   bootstrap: [ AppComponent ],
-  providers: [CartService, ShopService, InMemoryDataService]
+  providers: [CartService]
 })
 export class AppModule { }
 
