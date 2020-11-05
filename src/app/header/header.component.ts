@@ -21,6 +21,7 @@ images = ['https://raw.githubusercontent.com/phiwesriva/angular-xv4yjj-cas1wh/ma
     config.keyboard = false;
     config.pauseOnHover = true;
     config.wrap = true;
+    config.showNavigationArrows = false;
   }
 
   ngOnInit() {

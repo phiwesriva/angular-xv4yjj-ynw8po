@@ -1,8 +1,11 @@
 <!--<div *ngFor="let product of products; index as productId">-->
-  <div class="container">
+  <!--<div class="container">-->
+              
               <a [routerLink]="['/housef']">
           <!--<img src = "https://raw.githubusercontent.com/phiwesriva/angular-xv4yjj-syd1sn/master/src/assets/pic1.jpg" height="400" width="100%"></a>
-          -->
+                -->
+
+                
 <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <img [src]="images[0]" alt="Random first slide" width="100%" height="640">
@@ -40,8 +43,8 @@
       </div>-->
     </ng-template>
   </ngb-carousel></a>
+    
     <div class="top-left">
-
         <!--<a class="button fancy-button"><i class="material-icons">menu</i></a>-->
         <ul class="topnav" id="u01">
           <li class="dropdown">
@@ -56,18 +59,19 @@
             <a [routerLink]="['/contact']"><label>Contact Us</label></a>
                   </div>
             </li>
-          </ul>
+          </ul></div>  
       
-    </div>
+    
   
 
   <div class="top-right"><a class="button fancy-button"><i class="material-icons">search</i></a>
 <a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_bag</i></a></div>
   <span class='cart_count notification-counter' data-toggle="modal" data-target="#exampleModal">{{cartCount}}</span>
-  <div class="centered"><a [routerLink]="['/news']"><img src= "https://raw.githubusercontent.com/phiwesriva/angular-xv4yjj-eyfwjf/master/src/assets/soduh.png" height="40" width="160"></a></div>
+
+  <div class="centered"><a [routerLink]="['/news']"><img src= "https://raw.githubusercontent.com/phiwesriva/angular-xv4yjj-eyfwjf/master/src/assets/soduh.png" height="40" width="160"></a> </div>
 
 <!--<div class="content">
 <a [routerLink]="['/housef']">
   UNDERSTANDING HOUSE FLIPPING WITH REMAX ESWATINI’S LYLE HUTTON</a>
   </div>-->
-</div>
+<!--</div>-->
